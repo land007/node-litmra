@@ -9,16 +9,14 @@ var crawling = function(milliseconds) {
 	});
 };
 var reptile = function() {
-	let a1 = async ()=> {
+	(async ()=> {
 		let sss = await unite(crawling, 1000);
 		console.log('a', sss);
-	};
-	a1();
-	let a2= async ()=> {
+	})();
+	(async ()=> {
 		let sss = await unite(crawling, 1000);
 		console.log('b', sss);
-	};
-	a2();
+	})();
 };
 
 reptile();
