@@ -17,6 +17,7 @@ var reptile = function() {
 		let sss = await unite(crawling, 1000);
 		console.log('b', sss);
 	})();
+	console.log('ok');
 };
 
 reptile();
